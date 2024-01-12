@@ -1,0 +1,59 @@
+.card{
+    font-family: $main-font;
+    width: 385px;
+    background-color: $white;
+    padding:25px;
+    border-radius: 20px;
+    border: 1px solid $Black;
+    box-shadow: 7px 7px 0px $Black;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+    &:hover{
+        box-shadow:14px 14px 0px $Black;
+    }
+    .hero-img{
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .tag{
+        font-weight: 800;
+        background-color: $primary-color;
+        width: fit-content;
+        padding:5px 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .meta-data{
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        pointer-events: auto;
+        cursor: pointer;
+        &:hover{
+            color:$primary-color;
+            cursor: url(../images/black-cursor.webp), auto;
+            transition: all .2s ease-in-out;
+        }
+    }
+    .card-paragraph{
+        color:$Grey;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 30px;
+            margin-right: 10px;
+        }
+        p{
+            font-weight: 800;
+            font-size: 14px;
+        }
+    }
+}
